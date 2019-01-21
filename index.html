@@ -120,7 +120,7 @@
                                       Введите контактный номер
                                   </small>
                               </div>
-                              <button class="btn btn-primary">Подтвердить</button>
+                              <button class="btn btn-primary" id="ConfirmButton">Подтвердить</button>
                             </form>  
                           </div>
                       </div>
@@ -232,44 +232,113 @@
                   </section>
                   <hr class="my-5">
                   <section id="contacts">
-                      <h2 class="mb-5 font-weight-bold text-center">Ваши впечатления</h2>
-                      <div class="row">
-                          <div class="col-lg-5 col-md-12">
-                              <form action="" class="p-5">
-                                  <div class="md-for form-sm">
-                                      <i class="fa fa-user prefix grey-text"></i>
-                                      <input type="text" id="form3" class="form-control form-control-sm" 
-                                      placeholder="Ваше имя">                           
-                                  </div>
-                                  <div class="md-for form-sm">
-                                      <i class="fa fa-envelope prefix grey-text"></i>
-                                      <input type="text" id="form2" class="form-control form-control-sm" 
-                                      placeholder="Ваш Email">                           
-                                  </div> 
-                                  <div class="md-for form-sm">
-                                          <i class="fa fa-tag prefix grey-text"></i>
-                                          <input type="text" id="form3_2" class="form-control form-control-sm" 
-                                          placeholder="Ваш заказ">                           
-                                      </div>
-                                  <div class="md-for form-sm">
-                                      <i class="fa fa-edit prefix grey-text"></i>        
-                                          <textarea  type="text" id="form3_3" class="md-textaria form-control form-control-sm" 
-                                           rows="5"> </textarea>                          
-                                      </div> 
-                                      <div class="text-center mt-4">
-                                          <button class="btn btn-ptimary primary-color">Отправить
-                                              <i class="fa fa-dove ml-1"></i>
-                                          </button>
-                                      </div>   
-                                  </form>
-                          </div>
-                      </div>
+                     
+                        <!--Section: Contact v.1-->
+<section class="section pb-5">
+
+    <!--Section heading-->
+    <h2 class="section-heading h1 pt-4">Контакты</h2>
+    <!--Section description-->
+    
+  
+    <div class="row">
+  
+      <!--Grid column-->
+      <div class="col-lg-5 mb-4">
+  
+        <!--Form with header-->
+        <div class="card">
+  
+          <div class="card-body">
+            <!--Header-->
+            <div class="form-header  accent-1">
+              <h3><i class="fa fa-envelope"></i> Свяжитесь с нами:</h3>
+            </div>
+  
+            
+            <br>
+  
+            <!--Body-->
+            <div class="md-form">
+              <i class="fa fa-user prefix grey-text"></i>
+              <input type="text" id="form-name" class="form-control">
+              <label for="form-name">Ваше имя</label>
+            </div>
+  
+            <div class="md-form">
+              <i class="fa fa-envelope prefix grey-text"></i>
+              <input type="text" id="form-email" class="form-control">
+              <label for="form-email">Ваш email</label>
+            </div>
+  
+            <div class="md-form">
+              <i class="fa fa-tag prefix grey-text"></i>
+              <input type="text" id="form-Subject" class="form-control">
+              <label for="form-Subject">Ваш заказ</label>
+            </div>
+  
+            <div class="md-form">
+              <i class="fa fa-pencil prefix grey-text"></i>
+              <textarea type="text" id="form-text" class="form-control md-textarea" rows="3"></textarea>
+              <label for="form-text">Ваш отзыв</label>
+            </div>
+  
+            <div class="text-center mt-4">
+              <button class="btn btn-light-blue">Отправить</button>
+            </div>
+  
+          </div>
+  
+        </div>
+        <!--Form with header-->
+  
+      </div>
+      <!--Grid column-->
+  
+      <!--Grid column-->
+      <div class="col-lg-7">
+  
+        <!--Google map-->
+        <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
+          <iframe src="https://maps.google.com/maps?q=new%20delphi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+  
+        <br>
+        <!--Buttons-->
+        <div class="row text-center">
+          <div class="col-md-4">
+            <a class="btn-floating accent-1"><i class="fa fa-map-marker"></i></a>
+            <p>Минск, #</p>
+            <p>Беларусь</p>
+          </div>
+  
+          <div class="col-md-4">
+            <a class="btn-floating  accent-1"><i class="fa fa-phone"></i></a>
+            <p>+ #9</p>
+            <p>Пн - ПТ, 8:00-22:00</p>
+          </div>
+  
+          <div class="col-md-4">
+            <a class="btn-floating  accent-1"><i class="fa fa-envelope"></i></a>
+            <p>info@gmail.com</p>
+          </div>
+        </div>
+  
+      </div>
+      <!--Grid column-->
+  
+    </div>
+  
+  </section>
+                   
                   </section>
               </div>
           </main>
       
           <!-- Footer -->
-<footer class="page-footer font-small blue pt-4">
+<!-- Footer -->
+<footer class="page-footer font-small blue mb-0">
 
         <!-- Footer Links -->
         <div class="container-fluid text-center text-md-left">
@@ -278,60 +347,77 @@
           <div class="row">
     
             <!-- Grid column -->
-            <div class="col-md-6 mt-md-0 mt-3">
+            <div class="col-md-4 mt-md-2 ml-1">
     
               <!-- Content -->
-              <h3 class="text-uppercase">Контакты</h3>
-              <p>
-               Художественная студия "
-               No name ART"<br>
-                  Адрес: г. Минск, <br>
-                  Телефон: +375298616461
-              </p>
-              <p>
-                  Время работы:<br>
-                  пн-пт: С 10:00 до 22:00<br>
-                  сб-вс: с 10:00 до 19:00
-              </p>
+              <h5 class="text-uppercase">Контакты</h5>
+              <div >
+                    <p>
+                        Художественная студия "
+                        No name ART"<br>
+                        Адрес: г. Минск, <br>
+                        Телефон: +375298616461
+                    </p>
+                </div>
+                </div>
+                <div class="col-md-4 mt-md-2 md-0">
+                <div class="work-time">
+                    
+                        <h5 class="text-uppercase">Время работы:</h5>
+                        <p>
+                        пн-пт: С 10:00 до 22:00<br>
+                        сб-вс: с 10:00 до 19:00
+                    </p>
+                </div>
+                </div>
     
-            </div>
+            
             <!-- Grid column -->
     
-            <hr class="clearfix w-100 d-md-none pb-3">
+            <hr class="clearfix w-100 d-md-none ">
     
             <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3">
+            <div class="col-md-3 mt-md-2 mb-0">
     
                 <!-- Links -->
-                <h3 class="text-uppercase">Мы в соц. сетях</h3>
-                    <a href="https://vk.com/khmelnitskaya99">
-                        <i class="fa fa-vk fa-4x white-text "></i>
-                    </a>
-                    <a href="#!">
-                            <i class="fa fa-facebook-official fa-4x white-text ml-2"></i>
-                        </a>
-                        <a href="#!">
-                                <i class="fa fa-twitter fa-4x white-text ml-2 "></i>
+                <div class="social">
+                        <h5 class="text-uppercase">Мы в соц. сетях</h5>
+                            <a href="https://vk.com/khmelnitskaya99">
+                                <i class="fa fa-vk fa-2x white-text "></i>
                             </a>
                             <a href="#!">
-                        <i class="fa fa-instagram fa-4x white-text ml-2"></i>
-                    </a>
-                  
+                                    <i class="fa fa-facebook-official fa-2x white-text ml-2"></i>
+                                </a>
+                                <a href="#!">
+                                        <i class="fa fa-twitter fa-2x white-text ml-2 "></i>
+                                    </a>
+                                    <a href="#!">
+                                <i class="fa fa-instagram fa-2x white-text ml-2"></i>
+                            </a>
+                            </div>
+                      </div>
     
               </div>
-              
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+             
+              <!-- Grid column -->
     
           </div>
           <!-- Grid row -->
     
         </div>
         <!-- Footer Links -->
+    </footer>
+      <!-- Footer -->
+                
+                  
     
-        <!-- Copyright -->
-        
-        <!-- Copyright -->
+             
+          <!-- Grid row -->
     
-      </footer>
+       
       <!-- Footer -->
       
           <!-- Optional JavaScript -->
