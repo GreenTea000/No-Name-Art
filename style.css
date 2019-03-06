@@ -1,5 +1,5 @@
 body {
-    height: 2000px;
+    height: 100px;
     padding-right: 0px !important
 }
 
@@ -19,4 +19,8 @@ table {
     text-align: center;
     border-collapse: separate;
     border-spacing: 8px 3px;
+}
+
+.footer-copyright {
+    display: none;
 }
